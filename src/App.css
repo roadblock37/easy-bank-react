@@ -9,6 +9,22 @@ Variables
 
 /* 
 =================
+Media queries
+=================
+*/
+
+@media screen and (min-width: 768px) {
+  .links-container {
+    height: auto !important;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* 
+=================
 Universal styles
 =================
 */
@@ -48,8 +64,4 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-}
-
-.show-container {
-  height: 10rem;
 }

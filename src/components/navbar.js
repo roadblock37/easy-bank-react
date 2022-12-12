@@ -1,7 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import logo from '../images/logo.svg'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import logo from '../images/logo.svg';
+
 // array of links to populate navbar dynamically
 const links = [
     {id: 1, url: "/", text: "Home"},
@@ -9,7 +10,6 @@ const links = [
     {id: 3, url: "/contact", text: "Contact"},
     {id: 4, url: "/blog", text: "Blog"},
     {id: 5, url: "/careers", text: "Careers"},
-
 ];
 
 const NavBar = () => {
@@ -42,8 +42,10 @@ const NavBar = () => {
         <nav>
             <div className='nav-header'>
                 <img src={logo} alt='logo' className='logo'/>
+                {/* <Hamburger showLinks={showLinks} handleOpen={toggleLinks}/> */}
                 <button className='nav-toggle' onClick={toggleLinks}>
-                    <FontAwesomeIcon icon={faBars}/>
+                    
+                {showLinks? <FontAwesomeIcon icon={faXmark}/>: <FontAwesomeIcon icon={faBars}/> }
                 </button>
             </div>
             {/* container that holds the ul of links */}
