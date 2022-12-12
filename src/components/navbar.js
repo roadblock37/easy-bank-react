@@ -42,7 +42,6 @@ const NavBar = () => {
         <nav>
             <div className='nav-header'>
                 <img src={logo} alt='logo' className='logo'/>
-                {/* <Hamburger showLinks={showLinks} handleOpen={toggleLinks}/> */}
                 <button className='nav-toggle' onClick={toggleLinks}>
                     
                 {showLinks? <FontAwesomeIcon icon={faXmark}/>: <FontAwesomeIcon icon={faBars}/> }
