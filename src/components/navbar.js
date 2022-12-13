@@ -42,7 +42,7 @@ const NavBar = () => {
         <nav>
             <div className='nav-header'>
                 <img src={logo} alt='logo' className='logo'/>
-                <button id='nav-toggle' onClick={toggleLinks}>
+                <button className='nav-toggle' onClick={toggleLinks}>
                     
                 {showLinks? <FontAwesomeIcon icon={faXmark}/>: <FontAwesomeIcon icon={faBars}/> }
                 </button>

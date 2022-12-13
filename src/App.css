@@ -29,7 +29,7 @@ Media queries
     height: auto !important;
   }
 
-  #nav-toggle {
+  .nav-toggle {
     display: none;
   }
 }
@@ -94,7 +94,7 @@ nav {
 
 }
 
-#nav-toggle {
+.nav-toggle {
   cursor: pointer;
   transition: var(--transition);
 }
@@ -109,3 +109,10 @@ nav {
   overflow: hidden;
   transition: var(--transition);
 }
+
+
+/* 
+===============
+Top Section
+===============
+*/
