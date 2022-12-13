@@ -29,7 +29,7 @@ Media queries
     height: auto !important;
   }
 
-  .nav-toggle {
+  #nav-toggle {
     display: none;
   }
 }
