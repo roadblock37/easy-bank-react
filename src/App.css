@@ -60,7 +60,7 @@ p {
 }
 
 /* universal button styling */
-/* button {
+.btn {
   color: var(--lightText);
   background-image: linear-gradient(to 
   bottom right, #33D35E, #2AB6D9);
@@ -71,7 +71,12 @@ p {
   width: 10rem;
   height: 2.75rem;
 
-} */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 /* 
 =================
@@ -81,7 +86,6 @@ Navbar
 nav {
   width: 100%;
   padding: 1rem;
-  border: solid 1px black;
 
 }
 .nav-header {
@@ -116,3 +120,14 @@ nav {
 Top Section
 ===============
 */
+
+.top-section {
+  background-color: var(--lightBackground);
+  background-image: url('./images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.top-section article {
+  justify-content: center;
+}

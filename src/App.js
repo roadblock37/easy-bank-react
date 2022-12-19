@@ -4,11 +4,11 @@ import TopSection from './components/topSection';
 
 function App() {
   return (
-    <div>
+    <main>
 
     <NavBar/>
     <TopSection/>
-    </div>
+    </main>
   );
 }
 
